@@ -1,13 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
-let value =0;
-let total =1;
+/* GET home page. */
 router.get('/', function(req, res, next) {
-  value = value + 2;
-  total = total + value;
-  res.send('Total is:' + total);
+  res.render('mydata', { title: 'Venkata Durga Yenumula' });
 });
 
 module.exports = router;
